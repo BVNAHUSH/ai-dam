@@ -1,0 +1,11 @@
+query_id,query,expected_content,expected_media_type,notes
+Q001,A woman standing with a cat,Images tagged from 'woman with cat' / 'person with pet' queries showing a woman and a cat together,image,Tests person+animal co-occurrence recognition rather than just detecting a cat alone
+Q002,Modern living room,Images from 'modern living room' / 'interior design living room' queries,image,Should retrieve multiple genuinely relevant images to allow ranking evaluation
+Q003,Construction activity,Videos and images from 'construction site' / 'construction worker(s)' / 'building construction activity' queries,"image,video",Cross-media query: both photos and video clips should surface
+Q004,Customer testimonial videos,Videos from 'person talking interview' query,video,No dedicated testimonial dataset exists commercially; interview-style clips stand in as the closest available proxy
+Q005,Residential project brochures,PDFs from 'residential housing brochure' / 'housing development report' / 'affordable housing report' queries,pdf,Core PDF test case for the DAM's document-understanding path
+Q006,People working in an office,Images from 'people working in office' / 'business meeting office' queries,"image,video",Checks retrieval doesn't confuse general 'people' images with office-specific context
+Q007,Modern residential buildings,Images from 'apartment building exterior' / 'modern architecture building' / 'residential house exterior' queries,image,Distinguish from construction-site images which are visually similar but semantically different (in-progress vs finished buildings)
+Q008,Bedroom interior,Images from 'cozy bedroom interior' query,image,Should not be confused with living room or kitchen interiors despite similar indoor-photo style
+Q009,Construction workers at a building site,Images and videos from 'construction worker' / 'construction workers building' queries,"image,video",Person+context query; tests whether people are correctly linked to the construction setting rather than treated as generic people
+Q010,Property or housing documents,PDFs from 'urban housing policy' / 'public housing project report' / 'real estate market report' queries,pdf,Broader document query than Q005; should also surface PDFs Q005 returns, plus policy/market-report style documents
