@@ -193,7 +193,7 @@ ai-dam/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/BVNAHUSH/ai-dam>
 cd ai-dam
 ```
 
